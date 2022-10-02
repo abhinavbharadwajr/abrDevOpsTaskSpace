@@ -1,4 +1,4 @@
-# guviWorkspace
+# guvi Task Space
 
 <details> <summary> Task 1 - Basic Linux Commands P1 </summary>
 <p>
@@ -13,7 +13,7 @@
  6. Type sudo su and go to admistration mode Create a new user.
  7. Play with file permissions on the text file that was just created
 
- Output()
+ [Output](https://github.com/abhinavbharadwajr/guviWorkspace/blob/master/Task1/Task1Output.txt)
 </p>
 </details>
 
@@ -24,6 +24,7 @@
 
  Create a file with provided contents. Replace the word "guvi" with "technologies" and take output in new file.
 
+ [Output](https://github.com/abhinavbharadwajr/guviWorkspace/blob/master/Task2/Task2Output.txt)
 </p>
 </details>
 
@@ -36,6 +37,7 @@
  2. Create a file with. txt extension. Change the permission set of that file, so that any user can read it, group can read/write and owner can read/write/execute it.
  3. Create 10 files with .txt extension and rename top 5files to .yml extension
 
+ [Output](https://github.com/abhinavbharadwajr/guviWorkspace/blob/master/Task3/Task3Output.txt)
 </p>
 </details>
 
@@ -51,5 +53,6 @@
         > Note: Value of NEW_COLOR and OLD_COLOR must be given by user when run time.
  3. Write a shell script program that displays the current time and date.
 
+ [Output](https://github.com/abhinavbharadwajr/guviWorkspace/blob/master/Task4/Task4Output.txt)
 </p>
 </details>

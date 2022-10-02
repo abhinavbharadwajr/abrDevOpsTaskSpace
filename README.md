@@ -1,4 +1,4 @@
-# guvi Task Space
+# GUVI DevOps Task Space
 
 <details> <summary> Task 1 - Basic Linux Commands P1 </summary>
 <p>

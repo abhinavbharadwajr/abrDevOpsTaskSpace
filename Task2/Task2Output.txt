@@ -1,0 +1,29 @@
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ mkdir Task2
+
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ cd Task2/
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ vi test.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ cat test.txt
+welcome
+guvi
+sesion
+welcome
+welcome to guvi session
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ cat test.txt | grep guvi
+guvi
+welcome to guvi session
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ sed -i 's/guvi/technologies/g' test.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ mv test.txt abrTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ cat abrTest.txt
+welcome
+technologies
+sesion
+welcome
+welcome to technologies session
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$ cat abrTest.txt | grep technologies
+technologies
+welcome to technologies session
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task2$

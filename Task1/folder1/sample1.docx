@@ -1,0 +1,26 @@
+    1  git update-for-windows
+    2  update-git-for-windows
+    3  git update-git-for-windows
+    4  git update
+    5  exit
+    6  git update-git-for-windows
+    7  exit
+    8  su
+    9  su -
+   10  pwd
+   11  ls =l
+   12  ls -l
+   13  clear
+   14  history
+   15  cd ..
+   16  cd /d
+   17  pwd
+   18  mkdir guviWorkspace
+   19  cd guviWorkspace/
+   20  vi sample1.txt
+   21  cat sample1.txt 
+   22  cat sample1 >> sample2
+   23  cat sample1.txt >> sample2.txt
+   24  ls
+   25  cat sample2.txt
+   26  history >> sample1

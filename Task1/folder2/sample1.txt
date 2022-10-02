@@ -1,0 +1,7 @@
+Hello, this is a Sample file created from Git Bash using Linux Commands.
+this Sample file was created as Part of the Zen DevOps Classes Tasks.
+
+Later this file file will be renamed to 'Sample1' from the current Name for Internal purposes.
+
+DevOps is an approach in the Modern industry aimed towards estabishing a Cuture that brings People Together.
+In simple words, DevOps is a People first approach in the Cloud-based Development Life cycle.

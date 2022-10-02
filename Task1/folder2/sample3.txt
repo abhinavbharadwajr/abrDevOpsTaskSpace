@@ -1,0 +1,46 @@
+    1  git update-for-windows
+    2  update-git-for-windows
+    3  git update-git-for-windows
+    4  git update
+    5  exit
+    6  git update-git-for-windows
+    7  exit
+    8  su
+    9  su -
+   10  pwd
+   11  ls =l
+   12  ls -l
+   13  clear
+   14  history
+   15  cd ..
+   16  cd /d
+   17  pwd
+   18  mkdir guviWorkspace
+   19  cd guviWorkspace/
+   20  vi sample1.txt
+   21  cat sample1.txt 
+   22  cat sample1 >> sample2
+   23  cat sample1.txt >> sample2.txt
+   24  ls
+   25  cat sample2.txt
+   26  history >> sample1
+   27  cat sample1
+   28  cat sample1.txt | grep DevOps
+   29  mkdir /d/guviWorkspace/folder1
+   30  mkdir /d/guviWorkspace/folder2
+   31  pwd
+   32  ls -l
+   33  mv sample1 folder1
+   34  mv sample3 folder1
+   35  mv sample2 folder1
+   36  ls folder1
+   37  ls -l folder1
+   38  mv sample1.txt folder2
+   39  mv sample2.txt folder2
+   40  ls -l folder2
+   41  cd folder1
+   42  mv sample1 sample1.docx
+   43  mv sample2 sample2.docx
+   44  ls -l
+   45  cd ..
+   46  history > sample3.txt

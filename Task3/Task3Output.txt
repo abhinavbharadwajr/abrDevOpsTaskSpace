@@ -1,0 +1,176 @@
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ pwd
+/home/abhinavbharadwajr/guviWorkspace
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ ls -l
+total 12
+drwxr-xr-x 4 abhinavbharadwajr abhinavbharadwajr 4096 Aug 28 15:23 Task1
+drwxr-xr-x 2 abhinavbharadwajr abhinavbharadwajr 4096 Sep 10 15:24 Task2
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ mkdir Task3
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ ls -l
+total 12
+drwxr-xr-x 4 abhinavbharadwajr abhinavbharadwajr 4096 Aug 28 15:23 Task1
+drwxr-xr-x 2 abhinavbharadwajr abhinavbharadwajr 4096 Sep 10 15:24 Task2
+drwxr-xr-x 2 abhinavbharadwajr abhinavbharadwajr 4096 Sep 16 13:58 Task3
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ chmod 700 Task3
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ ls -l
+total 12
+drwxr-xr-x 4 abhinavbharadwajr abhinavbharadwajr 4096 Aug 28 15:23 Task1
+drwxr-xr-x 2 abhinavbharadwajr abhinavbharadwajr 4096 Sep 10 15:24 Task2
+drwx------ 2 abhinavbharadwajr abhinavbharadwajr 4096 Sep 16 13:58 Task3
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ cd Task3/
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ touch PermissionTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:02 PermissionTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$	chmod 000 PermissionTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+---------- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:02 PermissionTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ chmod 764 PermissionTest.txt 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rwxrw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:02 PermissionTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ rm -f PermissionTest.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ touch TaskFile{01..10}.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile01.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile02.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile03.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile04.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile05.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile06.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile07.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile08.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile09.txt
+-rw-rw-r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 14:03 TaskFile10.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ mv *.txt *.yml | head -n 5
+mv: target '*.yml' is not a directory
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ mv ?.txt ?.yml | head -n 5
+mv: cannot stat '?.txt': No such file or directory
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ mv "*.txt" "*.yml" | head -5
+mv: cannot stat '*.txt': No such file or directory
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ mv '*.txt' '*.yml' | head -5
+mv: cannot stat '*.txt': No such file or directory
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ sudo apt install rename
+[sudo] password for abhinavbharadwajr: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  rename
+0 upgraded, 1 newly installed, 0 to remove and 35 not upgraded.
+Need to get 20.2 kB of archives.
+After this operation, 55.3 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 rename all 1.30-1 [20.2 kB]
+Fetched 20.2 kB in 0s (41.6 kB/s) 
+Selecting previously unselected package rename.
+(Reading database ... 196180 files and directories currently installed.)
+Preparing to unpack .../archives/rename_1.30-1_all.deb ...
+Unpacking rename (1.30-1) ...
+Setting up rename (1.30-1) ...
+update-alternatives: using /usr/bin/file-rename to provide /usr/bin/rename (rename) in auto mode
+Processing triggers for man-db (2.10.2-1) ...
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile01.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile02.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile03.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile04.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile05.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile06.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile07.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile08.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile09.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile10.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls | head -n 5 | rename -v 's/.txt/.yml/'
+Reading filenames from file handle (GLOB(0x55a62e272a18))
+TaskFile01.txt renamed as TaskFile01.yml
+TaskFile02.txt renamed as TaskFile02.yml
+TaskFile03.txt renamed as TaskFile03.yml
+TaskFile04.txt renamed as TaskFile04.yml
+TaskFile05.txt renamed as TaskFile05.yml
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile01.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile02.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile03.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile04.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile05.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile06.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile07.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile08.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile09.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile10.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls | tail -n 5 | rename -v 's/.txt/.yml/'
+Reading filenames from file handle (GLOB(0x55a62e272a18))
+TaskFile06.txt renamed as TaskFile06.yml
+TaskFile07.txt renamed as TaskFile07.yml
+TaskFile08.txt renamed as TaskFile08.yml
+TaskFile09.txt renamed as TaskFile09.yml
+TaskFile10.txt renamed as TaskFile10.yml
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile01.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile02.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile03.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile04.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile05.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile06.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile07.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile08.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile09.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile10.yml
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls | head -n 5 | rename -v 's/.yml/.txt/'
+Reading filenames from file handle (GLOB(0x56154926ca18))
+TaskFile01.yml renamed as TaskFile01.txt
+TaskFile02.yml renamed as TaskFile02.txt
+TaskFile03.yml renamed as TaskFile03.txt
+TaskFile04.yml renamed as TaskFile04.txt
+TaskFile05.yml renamed as TaskFile05.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile01.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile02.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile03.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile04.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile05.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile06.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile07.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile08.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile09.yml
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile10.yml
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls | tail -n 5 | rename -v 's/.yml/.txt/'
+Reading filenames from file handle (GLOB(0x55f3e06cda18))
+TaskFile06.yml renamed as TaskFile06.txt
+TaskFile07.yml renamed as TaskFile07.txt
+TaskFile08.yml renamed as TaskFile08.txt
+TaskFile09.yml renamed as TaskFile09.txt
+TaskFile10.yml renamed as TaskFile10.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$ ls -l
+total 0
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile01.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile02.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile03.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile04.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile05.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile06.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile07.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile08.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile09.txt
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Sep 16 15:58 TaskFile10.txt
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task3$

@@ -1,0 +1,79 @@
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ mkdir Task4
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace$ cd Task4
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ 
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ chmod +x *
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ./Directory.sh 
+
+Enter Directory Name : TaskFolder
+
+Creating Directory.....
+
+Directory Created Successfully!
+
+How many files to Create? : 10
+
+Enter File Extension : .new
+
+Creating 10 Files.....
+
+Files Created Successfully!
+
+Script Run Complete. error code (0x0000)
+
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ls -l
+total 16
+-rwxr-xr-x 1 abhinavbharadwajr abhinavbharadwajr  358 Oct  2 10:02 ColorMatch.sh
+-rwxr-xr-x 1 abhinavbharadwajr abhinavbharadwajr   70 Oct  2 09:53 DataTime.sh
+-rwxr-xr-x 1 abhinavbharadwajr abhinavbharadwajr  829 Oct  2 10:37 Directory.sh
+drwxr-xr-x 2 abhinavbharadwajr abhinavbharadwajr 4096 Oct  2 10:37 TaskFolder
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ls -l TaskFolder/
+total 0
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File1.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File10.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File2.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File3.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File4.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File5.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File6.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File7.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File8.new
+-rw-r--r-- 1 abhinavbharadwajr abhinavbharadwajr 0 Oct  2 10:37 File9.new
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ./ColorMatch.sh 
+
+Enter Color 1 : orange
+
+Enter Color 2 : orange
+
+my Shell Script is Correct and Colors Match!
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ./ColorMatch.sh 
+
+Enter Color 1 : green
+
+Enter Color 2 : red
+
+my Shell Script is Correct but Colors do not Match
+
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ./ColorMatch.sh 
+
+Enter Color 1 : file
+
+Enter Color 2 : give
+
+my Shell Script is Correct but Colors do not Match
+
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ./ColorMatch.sh
+
+Enter Color 1 : 1
+
+Enter Color 2 : 2
+
+my Shell Script is Correct but Colors do not Match
+
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$ ./DataTime.sh
+
+Current Date and Time : Sun Oct  2 10:59:57 IST 2022
+
+abhinavbharadwajr@Bora-Beast:~/guviWorkspace/Task4$

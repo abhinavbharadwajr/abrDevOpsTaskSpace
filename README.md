@@ -56,3 +56,13 @@
  [Output](https://github.com/abhinavbharadwajr/guviWorkspace/blob/master/Task4/Task4Output.txt)
 </p>
 </details>
+
+<details> <summary> Task 5 - Docker Containers and Images </summary>
+<p>
+ 1. Create a docker image that when ran as a container must serve as a static site that displays your name.
+
+ [Docker Image on DockerHub](https://hub.docker.com/repository/docker/abhinavbharadwajr/staticweb)
+
+ [Output](https://github.com/abhinavbharadwajr/guviWorkspace/blob/master/Task4/Task5Output.txt)
+</p>
+</details>

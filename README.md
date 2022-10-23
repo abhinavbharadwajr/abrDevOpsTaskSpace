@@ -59,6 +59,9 @@
 
 <details> <summary> Task 5 - Docker Containers and Images </summary>
 <p>
+
+ Dated : 2022-10-09
+
  1. Create a docker image that when ran as a container must serve as a static site that displays your name.
 
  [Docker Image on DockerHub](https://hub.docker.com/repository/docker/abhinavbharadwajr/staticweb)
